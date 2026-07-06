@@ -1,0 +1,93 @@
+:root {
+  /* Metin */
+  --text: #5b5563;
+  --text-soft: #8a8494;
+  --text-strong: #1c1622;
+
+  /* Vurgu (kalp kızılı) */
+  --accent: #ff4d6d;
+  --accent-strong: #e11d48;
+  --accent-soft: rgba(255, 77, 109, 0.12);
+  --accent-border: rgba(255, 77, 109, 0.4);
+
+  /* Yüzeyler */
+  --card: rgba(255, 255, 255, 0.72);
+  --card-border: rgba(28, 22, 34, 0.08);
+  --track: rgba(28, 22, 34, 0.06);
+  --thumb-ring: #ffffff;
+
+  /* Arka plan auralar */
+  --aura-1: rgba(255, 77, 109, 0.18);
+  --aura-2: rgba(168, 85, 247, 0.14);
+  --aura-3: rgba(255, 143, 163, 0.16);
+
+  /* Gölgeler */
+  --shadow-soft: 0 1px 2px rgba(28, 22, 34, 0.04), 0 6px 16px rgba(28, 22, 34, 0.06);
+  --shadow-card: 0 4px 10px rgba(28, 22, 34, 0.05), 0 24px 60px rgba(28, 22, 34, 0.1);
+
+  --bg: #fdf6f4;
+
+  font-family: system-ui, 'Segoe UI', Roboto, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text);
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #b7afc0;
+    --text-soft: #7d7590;
+    --text-strong: #f4eef7;
+
+    --accent: #ff5d7a;
+    --accent-strong: #ff85a1;
+    --accent-soft: rgba(255, 93, 122, 0.16);
+    --accent-border: rgba(255, 93, 122, 0.45);
+
+    --card: rgba(38, 30, 48, 0.66);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --track: rgba(255, 255, 255, 0.08);
+    --thumb-ring: #2a2233;
+
+    --aura-1: rgba(255, 93, 122, 0.2);
+    --aura-2: rgba(147, 51, 234, 0.2);
+    --aura-3: rgba(88, 28, 60, 0.35);
+
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 16px rgba(0, 0, 0, 0.35);
+    --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.3), 0 24px 60px rgba(0, 0, 0, 0.5);
+
+    --bg: #120a10;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100svh;
+  background: var(--bg);
+}
+
+#app {
+  min-height: 100svh;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-soft);
+}

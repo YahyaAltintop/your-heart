@@ -1,0 +1,27 @@
+{
+  "name": "your-heart",
+  "description": "Boy, kilo, yaş ve sağlık durumuna göre kişiye özel, atan 3B kalp modeli oluşturan açık kaynak web uygulaması.",
+  "license": "MIT",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "three": "^0.171.0",
+    "vue": "^3.5.39"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/three": "^0.171.0",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vue-tsc": "^3.3.5"
+  }
+}
